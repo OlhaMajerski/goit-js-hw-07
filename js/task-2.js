@@ -31,7 +31,7 @@ const gallery = document.querySelector('.gallery');
 let galleryHTML = '';
 
     for (const { url, alt } of images) {
-      galleryHTML += `<li><img src="${url}" alt="${alt}" style=width: 360px; height: 300px;"></li>`;
+      galleryHTML += `<li><img src="${url}" alt="${alt}" style= "width: 360px; height: 300px;"></li>`;
     }
 
     gallery.insertAdjacentHTML('beforeend', galleryHTML);
