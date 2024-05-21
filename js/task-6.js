@@ -17,9 +17,11 @@ function createBoxes(amount) {
     for (let i = 0; i < amount; i++) {
       boxContent += `<div style ="background:${getRandomHexColor()}; width: ${size}px;height:${size}px;"></div>`;
       size += 10;
-    }
-  } else alert('Select number between 1-100');
-  boxesContainer.innerHTML = boxContent;
+    } 
+    boxesContainer.innerHTML = boxContent;
+  } else {
+    alert('Select number between 1-100');
+  }
   input.value = '';
 }
 function getRandomHexColor() {
